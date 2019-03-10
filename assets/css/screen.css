@@ -1,0 +1,135 @@
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  color: #404040;
+}
+
+a {
+  color: #404040;
+}
+a:hover {
+  text-decoration: none;
+}
+
+p, ul, table {
+  margin: 0 0 1.8rem;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding: 2rem;
+  border-left: 14px solid #89b2f3;
+  background-color: #ececec;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+blockquote p:last-of-type {
+  margin-bottom: 0;
+}
+
+code {
+  font-size: 14px;
+}
+
+:not(pre) > code {
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #333;
+  font-weight: 400;
+  border: none;
+  font-family: Menlo, "Roboto Mono", "Courier New", monospace;
+}
+
+.btn {
+  font-size: 0.85rem;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+.btn:not(:disabled):not(.disabled):active:focus, .btn:focus {
+  box-shadow: none;
+}
+.btn.btn-primary {
+  padding: 0.5rem 1rem;
+}
+.btn.btn-light {
+  padding: 0.6rem 0.8rem;
+  background-color: #f3f3f3;
+  color: #4e4e4e;
+  font-weight: 600;
+}
+.btn.btn-light:hover {
+  background-color: #e2e2e2;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+section {
+  padding: 50px 0;
+}
+section .section_header .section_title {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  margin: 1rem 0;
+  letter-spacing: 0.5px;
+}
+
+/********** Header **********/
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+nav .brand {
+  flex: 1;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+nav .navbar {
+  flex: 9;
+}
+nav .navbar .nav {
+  margin-left: 10rem;
+}
+nav .navbar .nav a {
+  margin: 0 2rem;
+  font-size: 1.1rem;
+}
+
+section .articles_list .article {
+  padding: 0.6rem 0;
+  padding-left: 0.5rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+section .articles_list .article:hover {
+  background-color: #f3f3f3;
+}
+section .articles_list .article .title {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+section .load_more_articles {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+article {
+  margin-top: 4rem;
+}
+article a {
+  color: #3f80ff;
+  text-decoration: none;
+}

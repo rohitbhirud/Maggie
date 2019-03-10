@@ -1,0 +1,54 @@
+/********** Header **********/
+nav {
+	display: flex;
+	align-items: center;
+	padding: 1rem 0;
+
+	.brand {
+		flex: 1;
+
+		font-size: 1.5rem;
+	    letter-spacing: 1px;
+	    font-weight: 600;
+	}
+
+	.navbar {
+		flex: 9;
+
+		.nav {
+			margin-left: 10rem;
+
+			a {
+				margin: 0 2rem;
+			    font-size: 1.1rem;
+			}
+		}
+	}
+}
+
+section {
+	.articles_list {
+		.article {
+			padding: 0.6rem 0;
+			padding-left: 0.5rem;
+		    border-bottom: 1px solid #f3f3f3;
+
+		    &:hover {
+		    	background-color: #f3f3f3;
+		    }
+
+			.title {
+				color: #333;
+				font-weight: 600;
+				font-size: 1.1rem;
+    			letter-spacing: 0.5px;
+			}
+
+		}
+	}
+
+	.load_more_articles {
+	    display: inline-block;
+	    margin-top: 1rem;
+	}
+}

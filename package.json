@@ -1,0 +1,51 @@
+{
+  "name": "maggie",
+  "description": "A minimal blogging theme for Ghost.",
+  "version": "1.0.0",
+  "engines": {
+    "ghost": ">=2.0.0",
+    "ghost-api": "v2"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": {
+    "name": "Rohit Bhirud",
+    "email": "rbhirud7@gmail.com",
+    "url": "https://github.com/rohitbhirud"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Blog"
+    ]
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rohitbhirud/Maggie.git"
+  },
+  "bugs": "https://github.com/rohitbhirud/Maggie/issues",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.0.14"
+  },
+  "config": {
+    "posts_per_page": 6
+  },
+  "devDependencies": {
+    "sass": "^1.17.2",
+    "sass-loader": "7.*"
+  }
+}
